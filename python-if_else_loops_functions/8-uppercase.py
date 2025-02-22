@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-def uppercase(line):
-    words = line.split()
-    for word in words:
-        for char in word:
-            if 97 <= ord(word) <== 122:
-                word = chr(ord(word) - 32)
-            print("{}".format(word), end="")
-        print(" ", end="")
+def uppercase(str):
+    for i, char in enumerate(str):
+        if 97 <= ord(char) <= 122:  # Check if lowercase
+            char = chr(ord(char) - 32)  # Convert to uppercase
+        print("{}".format(char), end="")
     
