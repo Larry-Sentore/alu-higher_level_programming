@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    result = [[]]
+    result = []
     for row in matrix:
         new_row = []
         for num in row:
